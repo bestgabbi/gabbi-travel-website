@@ -26,7 +26,7 @@ const i18n = {
         skill_cooking_desc: "我可以做简单健康的中国菜，也喜欢学习 host 的拿手菜。",
         skill_coffee_title: "咖啡与早餐",
         skill_coffee_desc: "我喜欢练习手冲、拿铁和早午餐搭配，享受轻松的交流时间。",
-        skill_tidy_title: "空间维护",
+        skill_tidy_title: "房间收纳",
         skill_tidy_desc: "我尊重共同生活的空间，乐于协助清洁、组织和小型布置。",
         hobbies_eyebrow: "Me on weekends and on the road",
         hobbies_title: "兴趣爱好",
