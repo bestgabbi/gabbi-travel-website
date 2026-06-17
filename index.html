@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabbi | Travel Introduction</title>
+    <meta name="description" content="Gabbi's personal travel introduction and life sharing.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top">
+            <span class="brand-mark">G</span>
+            <span>Gabbi</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#map" data-i18n="nav_map">地图</a>
+            <a href="#skills" data-i18n="nav_skills">生活技能</a>
+            <a href="#hobbies" data-i18n="nav_hobbies">兴趣爱好</a>
+            <a href="#journey" data-i18n="nav_journey">近期路线</a>
+            <a href="#contact" data-i18n="nav_contact">联系方式</a>
+        </nav>
+        <div class="language-switcher">
+            <button class="lang-button is-active" data-lang="zh">中</button>
+            <button class="lang-button" data-lang="en">EN</button>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Map Section -->
+        <section class="section map-section" id="map">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="map_eyebrow">Profile</p>
+                <h1 data-i18n="map_title">Hi, I'm Gabbi.</h1>
+                <div class="hero-intro" id="hero-intro-container">
+                    <!-- Intro will be injected by JS via i18n -->
+                </div>
+            </div>
+
+            <div class="map-layout">
+                <div class="world-map">
+                    <div class="map-legend">
+                        <span><i class="legend-dot visited"></i><span data-i18n="legend_visited">Visited</span></span>
+                        <span><i class="legend-dot exploring"></i><span data-i18n="legend_exploring">Exploring</span></span>
+                        <span><i class="legend-dot base"></i><span data-i18n="legend_base">Long-time base</span></span>
+                    </div>
+                    <div class="map-canvas" id="map-canvas">
+                        <svg viewBox="0 0 1000 520">
+                            <g class="map-grid">
+                                <path d="M90 120H910M90 200H910M90 280H910M90 360H910M170 70V460M330 70V460M500 70V460M670 70V460M830 70V460"></path>
+                            </g>
+                            <g class="real-world-map">
+                                <path class="land land-americas" d="M128 126l31-34 62-19 52 11 38 25 14 39 44 22 15 36-18 35-49 4-32 28 13 37-19 37-39 11-27-25-34 13-36-24-20-48-42-18-22-51 16-48 53-28Z"></path>
+                                <path class="land land-americas" d="M300 314l32 16 25 39-9 46-25 53-36 47-17-52-18-54-27-39 19-43 56-13Z"></path>
+                                <path class="land land-americas" d="M306 91l53-26 50 15 23 39-19 31-54 7-47-25-6-41Z"></path>
+                                <path class="land land-europe" d="M470 157l31-20 42 3 34 19-10 31-37 10-31 25-38-19-13-28 22-21Z"></path>
+                                <path class="land land-africa" d="M481 226l56-22 56 22 37 58-14 74-49 87-51-14-31-56-27-72 23-77Z"></path>
+                                <path class="land land-asia" d="M556 139l82-36 117 10 113 44 46 54-28 52-77 4-31 48-63-14-34 29-56-19-48 16-45-37-10-65 38-86Z"></path>
+                                <path class="land land-australia" d="M765 384c47-15 108 1 130 37 22 37 2 82-45 100-53 20-111-2-129-47-14-36 2-75 44-90Z"></path>
+                                <path class="land land-new-zealand" d="M902 456c26 7 36 27 25 49-13 25-43 33-77 31 16-33 29-58 52-80Z"></path>
+                            </g>
+                        </svg>
+                        <div class="map-points" id="map-points">
+                            <!-- Points will be injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="map-panel" id="map-panel">
+                    <p class="panel-kicker" data-i18n="selected_place">Selected place</p>
+                    <span class="place-status" id="selected-status"></span>
+                    <h3 id="selected-city">Select a city</h3>
+                    <p id="selected-story"></p>
+                    <div class="map-photo-album" id="selected-photo-album">
+                        <!-- Photos will be injected by JS -->
+                    </div>
+                    <button class="photo-button" id="open-gallery" data-i18n="view_photos">查看旅行照片</button>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Stats Band -->
+        <section class="intro-band">
+            <div>
+                <span class="stat-value">EN / 中文</span>
+                <span class="stat-label" data-i18n="stat_languages">我讲英文和中文</span>
+            </div>
+            <div>
+                <span class="stat-value" id="visited-count">0</span>
+                <span class="stat-label" data-i18n="stat_visited">已去过城市</span>
+            </div>
+            <div>
+                <span class="stat-value" id="exploring-count">0</span>
+                <span class="stat-label" data-i18n="stat_exploring">计划探索</span>
+            </div>
+        </section>
+
+
+
+        <!-- Life Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="skills_eyebrow">Easy to share a home with</p>
+                <h2 data-i18n="skills_title">生活技能</h2>
+                <p data-i18n="skills_desc">展示我可以如何参与到日常生活中：烹饪、咖啡、保持空间整洁以及文化和食谱交流。</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="album-cover">
+                        <img src="03_life_skills/cooking/IMG_5370.JPG" alt="Cooking">
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="skill_cooking_title">家常烹饪</h3>
+                        <p data-i18n="skill_cooking_desc">我可以做简单健康的中国菜，也喜欢学习 host 的拿手菜。</p>
+                    </div>
+                </article>
+                <article class="feature-card">
+                    <div class="album-cover">
+                        <img src="03_life_skills/coffee/IMG_6681.JPG" alt="Coffee">
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="skill_coffee_title">咖啡与早餐</h3>
+                        <p data-i18n="skill_coffee_desc">我喜欢练习手冲、拿铁和早午餐搭配，享受轻松的交流时间。</p>
+                    </div>
+                </article>
+                <article class="feature-card">
+                    <div class="album-cover empty-media">
+                        <span>0 photos</span>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="skill_tidy_title">空间维护</h3>
+                        <p data-i18n="skill_tidy_desc">我尊重共同生活的空间，乐于协助清洁、组织和小型布置。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="section" id="hobbies">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="hobbies_eyebrow">Me on weekends and on the road</p>
+                <h2 data-i18n="hobbies_title">兴趣爱好</h2>
+                <p data-i18n="hobbies_desc">徒步、滑雪、球类运动、跑步、攀岩和城市漫步是我结识朋友的方式。</p>
+            </div>
+            <div class="hobby-strip">
+                <article class="hobby-card">
+                    <div class="album-cover">
+                        <img src="04_hobbies/hiking/27feff21ce53ff22e4bfccb4733d0a74.jpg" alt="Hiking">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 data-i18n="hobby_hiking_title">徒步</h3>
+                        <p data-i18n="hobby_hiking_desc">自然路线、湖泊漫步和轻型登山。</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <div class="album-cover">
+                        <img src="04_hobbies/skiing/5143e2aef453d644240891c7b0091825.jpg" alt="Skiing">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 data-i18n="hobby_skiing_title">滑雪</h3>
+                        <p data-i18n="hobby_skiing_desc">我喜欢和朋友一起练习，探访雪山小镇。</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <div class="album-cover">
+                        <img src="04_hobbies/ball_games/2026-06-17 18.58.48.png" alt="Ball Games">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 data-i18n="hobby_ball_title">球类运动</h3>
+                        <p data-i18n="hobby_ball_desc">羽毛球、网球或随意的投篮练习都很棒。</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <div class="album-cover">
+                        <img src="04_hobbies/Run/14812a2f98ca3bbc854fddb9f0d0105a.jpg" alt="Running">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 data-i18n="hobby_running_title">跑步</h3>
+                        <p data-i18n="hobby_running_desc">我喜欢通过跑步发现城市，保持旅途中的活力节奏。</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <div class="album-cover">
+                        <img src="04_hobbies/climbing/835591e89f5748421dc9f17cee059372.jpg" alt="Climbing">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 data-i18n="hobby_climbing_title">攀岩</h3>
+                        <p data-i18n="hobby_climbing_desc">一次小小的冒险，帮助我练习专注、力量和平衡。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section journey-section" id="journey">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="journey_eyebrow">Current travel route</p>
+                <h2 data-i18n="journey_title">近期路线</h2>
+                <p data-i18n="journey_desc">近期行程计划、预期的活动以及目前的住宿需求。</p>
+            </div>
+            <div class="timeline" id="timeline-list">
+                <!-- Timeline items will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-copy">
+                <p class="eyebrow" data-i18n="contact_eyebrow">Stay in touch</p>
+                <h2 data-i18n="contact_title">在这里可以找到我</h2>
+                <p data-i18n="contact_desc">小红书、Instagram、微信和 WhatsApp 已连接如下。</p>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-item" href="https://xhslink.com/m/ABPUVM3SwAr" target="_blank">
+                    <span class="contact-icon">红</span>
+                    <span class="contact-type">Xiaohongshu</span>
+                    <h3>走遍世界的小Ga</h3>
+                </a>
+                <a class="contact-item" href="https://www.instagram.com/defmaphy" target="_blank">
+                    <span class="contact-icon">IG</span>
+                    <img class="contact-qr" src="06_contact/qr_codes/instagram.QR codejpg.jpg" alt="IG QR">
+                    <span class="contact-type">Instagram</span>
+                    <h3>defmaphy</h3>
+                </a>
+                <a class="contact-item" href="#">
+                    <span class="contact-icon">微</span>
+                    <img class="contact-qr" src="06_contact/qr_codes/wechat QR code.png" alt="WeChat QR">
+                    <span class="contact-type">WeChat</span>
+                    <h3>xxxxxxOiShii</h3>
+                </a>
+                <a class="contact-item" href="https://wa.me/85264834339" target="_blank">
+                    <span class="contact-icon">WA</span>
+                    <span class="contact-type">WhatsApp</span>
+                    <h3>+852 64834339</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Gallery Modal -->
+    <div class="modal" id="gallery-modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close">&times;</button>
+            <div class="gallery-viewer">
+                <button class="gallery-nav prev">‹</button>
+                <div class="gallery-frame">
+                    <img src="" alt="" id="gallery-img">
+                </div>
+                <button class="gallery-nav next">›</button>
+            </div>
+            <p class="gallery-counter"></p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

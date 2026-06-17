@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabbi | Travel Introduction</title>
+    <meta name="description" content="A multilingual personal introduction page for hosts, couchsurfers, and travel friends in Europe.">
+    <link rel="stylesheet" href="./Gabbi _ Travel Introduction_files/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html#top" aria-label="Gabbi home">
+        <span class="brand-mark">G</span>
+        <span>Gabbi</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html#map" id="nav-map">Map</a>
+        <a href="file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html#skills" id="nav-skills">Life Skills</a>
+        <a href="file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html#journey" id="nav-journey">Route</a>
+        <a href="file:///Users/gabbi/Documents/Gabbi%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.html#contact" id="nav-contact">Contact</a>
+      </nav>
+      <div class="language-switcher" aria-label="Language selector">
+        <button class="lang-button is-active" type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button class="lang-button" type="button" data-lang="de" aria-pressed="false">DE</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section map-section map-hero" id="map" aria-labelledby="map-title">
+        <div class="section-heading">
+          <p class="eyebrow" id="map-eyebrow">Travel map</p>
+          <h1 id="map-title">Hi, I'm Gabbi.🇬🇧</h1>
+          <div class="hero-intro" id="hero-intro"></div>
+          <div class="map-legend" aria-label="Map legend">
+            <span><i class="legend-dot visited"></i><span id="legend-visited">Visited</span></span>
+            <span><i class="legend-dot exploring"></i><span id="legend-exploring">Exploring</span></span>
+            <span><i class="legend-dot base"></i><span id="legend-base">Long-time base</span></span>
+          </div>
+        </div>
+
+        <div class="map-layout">
+          <div class="world-map" role="img" aria-label="Interactive world map">
+            <div class="map-canvas" id="map-canvas" style="--map-scale: 0.72; --map-rotate: 0.0deg; --map-x: 0.0px; --map-y: 0.0px;">
+              <svg viewBox="0 0 1000 520" aria-hidden="true" focusable="false">
+                <g class="map-grid">
+                  <path d="M90 120H910M90 200H910M90 280H910M90 360H910M170 70V460M330 70V460M500 70V460M670 70V460M830 70V460"></path>
+                </g>
+                <g class="real-world-map">
+                  <path class="land land-americas" d="M128 126l31-34 62-19 52 11 38 25 14 39 44 22 15 36-18 35-49 4-32 28 13 37-19 37-39 11-27-25-34 13-36-24-20-48-42-18-22-51 16-48 53-28Z"></path>
+                  <path class="land land-americas" d="M300 314l32 16 25 39-9 46-25 53-36 47-17-52-18-54-27-39 19-43 56-13Z"></path>
+                  <path class="land land-americas" d="M306 91l53-26 50 15 23 39-19 31-54 7-47-25-6-41Z"></path>
+                  <path class="land land-europe" d="M470 157l31-20 42 3 34 19-10 31-37 10-31 25-38-19-13-28 22-21Z"></path>
+                  <path class="land land-africa" d="M481 226l56-22 56 22 37 58-14 74-49 87-51-14-31-56-27-72 23-77Z"></path>
+                  <path class="land land-asia" d="M556 139l82-36 117 10 113 44 46 54-28 52-77 4-31 48-63-14-34 29-56-19-48 16-45-37-10-65 38-86Z"></path>
+                  <path class="land land-australia" d="M765 384c47-15 108 1 130 37 22 37 2 82-45 100-53 20-111-2-129-47-14-36 2-75 44-90Z"></path>
+                  <path class="land land-new-zealand" d="M902 456c26 7 36 27 25 49-13 25-43 33-77 31 16-33 29-58 52-80Z"></path>
+                </g>
+              </svg>
+              <div class="map-points" aria-label="Travel city markers"><button class="city-marker base is-active" type="button" data-city-id="hong-kong" aria-label="Hong Kong" style="left: 80.2%; top: 43.5%;"></button><button class="city-marker visited" type="button" data-city-id="beijing" aria-label="Beijing" style="left: 78.5%; top: 36.5%;"></button><button class="city-marker visited" type="button" data-city-id="shanghai" aria-label="Shanghai" style="left: 81.5%; top: 41%;"></button><button class="city-marker visited" type="button" data-city-id="guangdong" aria-label="Guangdong" style="left: 79.5%; top: 44.8%;"></button><button class="city-marker visited" type="button" data-city-id="hainan" aria-label="Hainan" style="left: 78.8%; top: 49%;"></button><button class="city-marker visited" type="button" data-city-id="fujian" aria-label="Fujian" style="left: 81.2%; top: 44.6%;"></button><button class="city-marker visited" type="button" data-city-id="zhejiang" aria-label="Zhejiang" style="left: 81.1%; top: 42.4%;"></button><button class="city-marker visited" type="button" data-city-id="jiangsu" aria-label="Jiangsu" style="left: 80.6%; top: 40.6%;"></button><button class="city-marker visited" type="button" data-city-id="qinghai" aria-label="Qinghai" style="left: 71%; top: 41%;"></button><button class="city-marker visited" type="button" data-city-id="western-sichuan" aria-label="Western Sichuan" style="left: 73.2%; top: 43.6%;"></button><button class="city-marker visited" type="button" data-city-id="yunnan" aria-label="Yunnan" style="left: 74.8%; top: 48%;"></button><button class="city-marker visited" type="button" data-city-id="guangxi" aria-label="Guangxi" style="left: 77.3%; top: 46.4%;"></button><button class="city-marker visited" type="button" data-city-id="chongqing" aria-label="Chongqing" style="left: 75.8%; top: 42.8%;"></button><button class="city-marker visited" type="button" data-city-id="macau" aria-label="Macau" style="left: 79.8%; top: 45.5%;"></button><button class="city-marker visited" type="button" data-city-id="thailand" aria-label="Thailand" style="left: 77.9%; top: 52.5%;"></button><button class="city-marker visited" type="button" data-city-id="malaysia" aria-label="Malaysia" style="left: 78.7%; top: 58%;"></button><button class="city-marker visited" type="button" data-city-id="indonesia" aria-label="Indonesia" style="left: 82.4%; top: 62.5%;"></button><button class="city-marker visited" type="button" data-city-id="japan" aria-label="Japan" style="left: 86.8%; top: 38.8%;"></button><button class="city-marker visited" type="button" data-city-id="south-korea" aria-label="South Korea" style="left: 84.4%; top: 38.8%;"></button><button class="city-marker visited" type="button" data-city-id="taipei" aria-label="Taipei" style="left: 81.8%; top: 45.8%;"></button><button class="city-marker visited" type="button" data-city-id="toronto" aria-label="Toronto" style="left: 28.2%; top: 34.8%;"></button><button class="city-marker visited" type="button" data-city-id="vancouver" aria-label="Vancouver" style="left: 17.8%; top: 30.6%;"></button><button class="city-marker visited" type="button" data-city-id="calgary" aria-label="Calgary" style="left: 20.4%; top: 29.5%;"></button><button class="city-marker visited" type="button" data-city-id="banff" aria-label="Banff" style="left: 20%; top: 30.8%;"></button><button class="city-marker visited" type="button" data-city-id="montreal" aria-label="Montreal" style="left: 30.8%; top: 33.6%;"></button><button class="city-marker visited" type="button" data-city-id="quebec" aria-label="Quebec" style="left: 31.4%; top: 32.8%;"></button><button class="city-marker visited" type="button" data-city-id="victoria" aria-label="Victoria" style="left: 17.3%; top: 31.6%;"></button><button class="city-marker visited" type="button" data-city-id="sydney" aria-label="Sydney" style="left: 88.9%; top: 77.5%;"></button><button class="city-marker visited" type="button" data-city-id="melbourne" aria-label="Melbourne" style="left: 86.9%; top: 81.8%;"></button><button class="city-marker visited" type="button" data-city-id="kiama" aria-label="Kiama" style="left: 88.7%; top: 78.5%;"></button><button class="city-marker exploring" type="button" data-city-id="route-amsterdam" aria-label="Amsterdam" style="left: 52%; top: 32.4%;"></button><button class="city-marker exploring" type="button" data-city-id="route-berlin" aria-label="Berlin" style="left: 54.2%; top: 32.3%;"></button><button class="city-marker exploring" type="button" data-city-id="route-hamburg" aria-label="Hamburg" style="left: 53.5%; top: 30.8%;"></button><button class="city-marker exploring" type="button" data-city-id="route-copenhagen" aria-label="Copenhagen" style="left: 54.4%; top: 29.7%;"></button></div>
+            </div>
+            <div class="map-controls" aria-label="Map controls">
+              <button type="button" data-map-control="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+              <button type="button" data-map-control="zoom-out" title="Zoom out" aria-label="Zoom out">-</button>
+              <button type="button" data-map-control="rotate-left" title="Rotate left" aria-label="Rotate left">↺</button>
+              <button type="button" data-map-control="rotate-right" title="Rotate right" aria-label="Rotate right">↻</button>
+              <button type="button" data-map-control="reset" title="Reset map" aria-label="Reset map">⌂</button>
+            </div>
+          </div>
+
+          <aside class="map-panel" aria-live="polite">
+            <p class="panel-kicker" id="selected-kicker">Selected place</p>
+            <span class="place-status base" id="selected-status">长期工作生活基地 · China</span>
+            <h3 id="selected-city">Hong Kong</h3>
+            <p id="selected-story">Hong Kong has been my long-time work and life base, and the starting point that connects my Asian city life with my European travel plans.</p>
+            <div class="map-photo-album" id="selected-photo-album">
+    <button class="map-photo-cover" type="button" data-photo-index="0" aria-label="Hong Kong photos">
+      <img src="./Gabbi _ Travel Introduction_files/hong-kong-01.jpg" alt="" loading="lazy">
+      <span>4 photos</span>
+    </button>
+    <div class="map-photo-thumbs">
+      
+            <button class="map-photo-thumb" type="button" data-photo-index="0" aria-label="Hong Kong photo 1">
+              <img src="./Gabbi _ Travel Introduction_files/hong-kong-01.jpg" alt="" loading="lazy">
+            </button>
+          
+            <button class="map-photo-thumb" type="button" data-photo-index="1" aria-label="Hong Kong photo 2">
+              <img src="./Gabbi _ Travel Introduction_files/hong-kong-02.jpg" alt="" loading="lazy">
+            </button>
+          
+            <button class="map-photo-thumb" type="button" data-photo-index="2" aria-label="Hong Kong photo 3">
+              <img src="./Gabbi _ Travel Introduction_files/hong-kong-03.jpg" alt="" loading="lazy">
+            </button>
+          
+            <button class="map-photo-thumb" type="button" data-photo-index="3" aria-label="Hong Kong photo 4">
+              <img src="./Gabbi _ Travel Introduction_files/hong-kong-04.jpg" alt="" loading="lazy">
+            </button>
+          
+    </div>
+  </div>
+            <button class="photo-button" type="button" id="open-gallery">View travel photos</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Quick introduction">
+        <div>
+          <span class="stat-value" id="language-stat-value">EN / 中文</span>
+          <span class="stat-label" id="language-stat-label">I speak English &amp; Chinese</span>
+        </div>
+        <div>
+          <span class="stat-value" id="visited-count">0</span>
+          <span class="stat-label" id="visited-count-label">Visited cities</span>
+        </div>
+        <div>
+          <span class="stat-value" id="exploring-count">0</span>
+          <span class="stat-label" id="exploring-count-label">Exploring cities</span>
+        </div>
+      </section>
+
+      <section class="section profile-section" id="profile" aria-labelledby="profile-title">
+        <div class="profile-card">
+          <p class="eyebrow">HelpX profile details</p>
+          <h2 id="profile-title">A sunny work-exchange traveler from China</h2>
+          <p>
+            Hi, I am Gabbi, born in 1999 and originally from China. I worked in the biomedical field in Hong Kong before deciding to spend a full year traveling through Europe. I am curious about European culture, art, languages, local stories, history, and the many different ways people live. I currently speak English and Chinese, and I would love to learn little pieces of every local language along the way. I am cheerful, warm, hands-on, and happy to help hosts with daily work while sharing food, stories, and good energy.
+          </p>
+        </div>
+      </section>
+
+      <section class="section split-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Easy to share a home with</p>
+          <h2 id="skills-title">Life skills</h2>
+          <p>A quick way for hosts to see how I can join daily life: cooking, coffee, keeping spaces tidy, and exchanging culture and recipes.</p>
+        </div>
+        <div class="feature-grid" id="skill-list">
+        <article class="feature-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="0" aria-label="Home cooking">
+      <img src="./Gabbi _ Travel Introduction_files/cooking-01.jpg" alt="" loading="lazy">
+      <span>3 photos</span>
+    </button>
+  
+          <div class="feature-content">
+            <h3>Home cooking</h3>
+            <p>I can cook simple, healthy Chinese dishes and love learning a host's favorite recipe.</p>
+          </div>
+        </article>
+      
+        <article class="feature-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="1" aria-label="Coffee and breakfast">
+      <img src="./Gabbi _ Travel Introduction_files/coffee-01.jpg" alt="" loading="lazy">
+      <span>2 photos</span>
+    </button>
+  
+          <div class="feature-content">
+            <h3>Coffee and breakfast</h3>
+            <p>I enjoy practicing pour-over, latte, and brunch pairings for relaxed conversations.</p>
+          </div>
+        </article>
+      
+        <article class="feature-card album-card">
+          <div class="album-cover empty-media" aria-hidden="true"><span>0 photos</span></div>
+          <div class="feature-content">
+            <h3>Shared-space care</h3>
+            <p>I respect shared homes and am happy to help with cleaning, organizing, and small decoration.</p>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="section hobbies-section" id="hobbies" aria-labelledby="hobbies-title">
+        <div class="section-heading">
+          <p class="eyebrow">Me on weekends and on the road</p>
+          <h2 id="hobbies-title">Hobbies</h2>
+          <p>Hiking, skiing, ball games, running, climbing, and city walks are all ways I like to meet people.</p>
+        </div>
+        <div class="hobby-strip" id="hobby-list">
+        <article class="hobby-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="3" aria-label="Hiking">
+      <img src="./Gabbi _ Travel Introduction_files/hiking-01.jpg" alt="" loading="lazy">
+      <span>3 photos</span>
+    </button>
+  
+          <div class="hobby-content">
+            <h3>Hiking</h3>
+            <p>Nature routes, lake walks, and light mountain trails.</p>
+          </div>
+        </article>
+      
+        <article class="hobby-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="4" aria-label="Skiing">
+      <img src="./Gabbi _ Travel Introduction_files/skiing-01.jpg" alt="" loading="lazy">
+      <span>2 photos</span>
+    </button>
+  
+          <div class="hobby-content">
+            <h3>Skiing</h3>
+            <p>I enjoy practicing with friends and visiting snowy mountain towns.</p>
+          </div>
+        </article>
+      
+        <article class="hobby-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="5" aria-label="Ball games">
+      <img src="./Gabbi _ Travel Introduction_files/ball-games-01.png" alt="" loading="lazy">
+      <span>1 photos</span>
+    </button>
+  
+          <div class="hobby-content">
+            <h3>Ball games</h3>
+            <p>Badminton, tennis, or casual shooting practice all sound good.</p>
+          </div>
+        </article>
+      
+        <article class="hobby-card album-card">
+          <div class="album-cover empty-media" aria-hidden="true"><span>0 photos</span></div>
+          <div class="hobby-content">
+            <h3>City walks</h3>
+            <p>Markets, bookstores, exhibitions, and local neighborhoods.</p>
+          </div>
+        </article>
+      
+        <article class="hobby-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="7" aria-label="Running">
+      <img src="./Gabbi _ Travel Introduction_files/run-01.jpg" alt="" loading="lazy">
+      <span>3 photos</span>
+    </button>
+  
+          <div class="hobby-content">
+            <h3>Running</h3>
+            <p>I like discovering a city through running and keeping an active rhythm on the road.</p>
+          </div>
+        </article>
+      
+        <article class="hobby-card album-card">
+          
+    <button class="album-cover" type="button" data-album-index="8" aria-label="Climbing">
+      <img src="./Gabbi _ Travel Introduction_files/climbing-01.jpg" alt="" loading="lazy">
+      <span>2 photos</span>
+    </button>
+  
+          <div class="hobby-content">
+            <h3>Climbing</h3>
+            <p>A small adventure that helps me practice focus, strength, and balance.</p>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <p class="eyebrow">Current travel route</p>
+          <h2 id="journey-title">Where I may be next</h2>
+          <p>Recent route plan, expected activities, and current accommodation needs.</p>
+        </div>
+        <div class="timeline" id="timeline-list">
+        <article class="timeline-item">
+          <span class="timeline-date">7.15</span>
+          <h3>阿姆斯特丹</h3>
+          <p>是否确定：已确定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：citywalk</p>
+        </article>
+      
+        <article class="timeline-item">
+          <span class="timeline-date">7月25日</span>
+          <h3>柏林 🇩🇪</h3>
+          <p>是否确定：待定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：CSD Berlin</p>
+        </article>
+      
+        <article class="timeline-item">
+          <span class="timeline-date">8月1日</span>
+          <h3>阿姆斯特丹 🇳🇱</h3>
+          <p>是否确定：已确定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：WorldPride 2026 运河游行（Canal Parade）</p>
+        </article>
+      
+        <article class="timeline-item">
+          <span class="timeline-date">8月2日</span>
+          <h3>汉堡 🇩🇪</h3>
+          <p>是否确定：待定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：Hamburg Pride</p>
+        </article>
+      
+        <article class="timeline-item">
+          <span class="timeline-date">8月8日</span>
+          <h3>阿姆斯特丹 🇳🇱</h3>
+          <p>是否确定：待定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：WorldPride March</p>
+        </article>
+      
+        <article class="timeline-item">
+          <span class="timeline-date">8月15日</span>
+          <h3>哥本哈根 🇩🇰</h3>
+          <p>是否确定：待定 · 住宿需求：寻找中</p>
+          <p>感兴趣的活动：Copenhagen Pride</p>
+        </article>
+      </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Stay in touch</p>
+          <h2 id="contact-title">You can find me here</h2>
+          <p>Xiaohongshu, Instagram, WeChat, and WhatsApp are connected below.</p>
+        </div>
+        <div class="contact-grid" id="contact-list">
+        <a class="contact-item" href="https://xhslink.com/m/ABPUVM3SwAr" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">红</span>
+          
+          <span class="contact-type">Xiaohongshu</span>
+          <h3>走遍世界的小Ga</h3>
+          <p>Click to open</p>
+        </a>
+      
+        <a class="contact-item" href="https://www.instagram.com/defmaphy?igsh=MWFsemdrYmFjcXR4bQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">IG</span>
+          <img class="contact-qr" src="./Gabbi _ Travel Introduction_files/qr-codes-01.jpg" alt="">
+          <span class="contact-type">Instagram</span>
+          <h3>defmaphy</h3>
+          <p>Click to open</p>
+        </a>
+      
+        <a class="contact-item" href="weixin://dl/chat?xxxxxxOiShii" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">微</span>
+          <img class="contact-qr" src="./Gabbi _ Travel Introduction_files/qr-codes-02.png" alt="">
+          <span class="contact-type">WeChat</span>
+          <h3>xxxxxxOiShii</h3>
+          <p>Click to open</p>
+        </a>
+      
+        <a class="contact-item" href="https://wa.me/85264834339" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon" aria-hidden="true">WA</span>
+          
+          <span class="contact-type">WhatsApp</span>
+          <h3>+852 64834339</h3>
+          <p>Click to open</p>
+        </a>
+      </div>
+      </section>
+    </main>
+
+    <div class="modal" id="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+      <div class="modal-backdrop" data-close-modal=""></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-close-modal="" aria-label="Close gallery">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+        </button>
+        <p class="panel-kicker" id="gallery-city"></p>
+        <h2 id="gallery-title"></h2>
+        <div class="gallery-viewer" id="gallery-viewer">
+          <button class="gallery-nav gallery-prev" type="button" id="gallery-prev" aria-label="Previous photo">‹</button>
+          <div class="gallery-frame" id="gallery-frame">
+            <div class="gallery-track" id="gallery-track"></div>
+          </div>
+          <button class="gallery-nav gallery-next" type="button" id="gallery-next" aria-label="Next photo">›</button>
+        </div>
+        <p class="gallery-counter" id="gallery-counter"></p>
+      </div>
+    </div>
+
+    <script src="./Gabbi _ Travel Introduction_files/media-manifest.js"></script>
+    <script src="./Gabbi _ Travel Introduction_files/contact-info.js"></script>
+    <script src="./Gabbi _ Travel Introduction_files/script.js"></script>
+  
+
+</body></html>
